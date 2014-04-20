@@ -1,0 +1,35 @@
+{
+  "name": "unique-resource",
+  "version": "0.0.0",
+  "description": "Get a short, unique key for a given file path based on the content of the file or its path.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "tape": "~2.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmckegg/unique-resource.git"
+  },
+  "keywords": [
+    "server",
+    "hash",
+    "require",
+    "resource",
+    "key",
+    "css",
+    "concat"
+  ],
+  "author": "Matt McKegg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmckegg/unique-resource/issues"
+  },
+  "homepage": "https://github.com/mmckegg/unique-resource"
+}
