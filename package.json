@@ -1,6 +1,6 @@
 {
   "name": "unique-resource",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Get a short, unique key for a given file path based on the content of the file or its path.",
   "main": "index.js",
   "directories": {
