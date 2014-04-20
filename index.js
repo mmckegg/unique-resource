@@ -52,5 +52,5 @@ function getHash(content){
   // combined with the original file name, and regidness of formats like css,
   // this should be unique enoygh.
   // but I'm sure there's a better hash method we could use
-  return createHash('sha1').update(content).digest('base64').replace(/[^a-z0-9]/i, '').slice(0,8).toUpperCase()
+  return createHash('sha1').update(content).digest('base64').replace(/(^[0-9\+\/]+)|[^a-z0-9]/ig, '').slice(0,10).toUpperCase()
 }

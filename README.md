@@ -11,7 +11,7 @@ Key is compatible with CSS classes and URLs. The file's basename is included in 
 
 ```js
 var getKey = require('unique-resource')
-getKey('./styles/page.css', {root: __dirname}) // => "C4L8HPDX-page"
+getKey('./styles/page.css', {root: __dirname}) // => "C4L8HPDXPJ-page"
 ```
 
 ### getKey(path, options={})

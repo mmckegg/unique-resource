@@ -14,11 +14,11 @@ test('hash based on content', function(t){
   t.ok(keys['comment'].slice(0, 8) === keys['same-as-comment'].slice(0, 8), 'same content has same hash')
 
   var expected = { 
-    'comment': '8M2L6G1W-comment',
-    'another-comment': 'MZGAFVEB-comment',
-    'object': '8ZHJSUQV-object',
-    'page': 'C4L8HPDX-page',
-    'same-as-comment': '8M2L6G1W-same-as-comment'
+    'another-comment': 'MZGAFVEBZS-comment', 
+    'comment': 'M2L6G1WQRT-comment', 
+    'object': 'ZHJSUQVXYF-object', 
+    'page': 'C4L8HPDXPJ-page', 
+    'same-as-comment': 'M2L6G1WQRT-same-as-comment' 
   }
 
   t.deepEqual(keys, expected)
@@ -35,15 +35,14 @@ test('hash based on path', function(t){
   }
 
   t.ok(keys['comment'] !== keys['another-comment'], 'keys should be unique')
-  t.ok(keys['comment'].slice(0, 8) !== keys['same-as-comment'].slice(0, 8), 'hash based on path')
+  t.ok(keys['comment'].slice(0, 10) !== keys['same-as-comment'].slice(0, 10), 'hash based on path')
 
   var expected = { 
-    'comment': 'CNA3GYGM-comment',
-    'another-comment': 'Z8SC6ILV-comment',
-    'object': 'HOVZ2EPQ-object',
-    'page': '017UHDUP-page',
-    'same-as-comment': 'OOCGOLNY-same-as-comment'
-  }
+    'another-comment': 'Z8SC6ILVFO-comment', 
+    'comment': 'CNA3GYGMWK-comment', 
+    'object': 'HOVZ2EPQPR-object', 
+    'page': 'UHDUPYCCK6-page', 
+    'same-as-comment': 'OOCGOLNYVS-same-as-comment' }
 
   t.deepEqual(keys, expected)
   t.end()
