@@ -5,6 +5,8 @@ Get a short, unique key for a given file path based on the content of the file o
 
 Key is compatible with CSS classes and URLs. The file's basename is included in the key to make debugging easier (both in dev and production).
 
+[![NPM](https://nodei.co/npm/unique-resource.png?compact=true)](https://nodei.co/npm/unique-resource/)
+
 ## API
 
 ```js
